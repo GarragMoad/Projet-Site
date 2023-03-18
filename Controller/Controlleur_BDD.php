@@ -17,27 +17,21 @@ class Controlleur_BDD {
             $email= $_POST['email'];
             $pwd= $_POST['password'];
             $profession = $_POST['Profession'];;
-            if($profession =='Etudiants')
+            if($profession=='Etudiants')
             {
             $sql = "INSERT INTO etudiant (Nom,Prenom,email,Mot_De_Passe) VALUES ('$nom','$prenom','$email','$pwd')";
             $this->model->execute_query($sql);
-             
-            // Redirection vers la page de liste des contacts
-            header('Location: ../Vue/Accueil.php');
+
             exit();
             }
             else{
                 $sql = "INSERT INTO Professeur (Nom,Prenom,email,Mot_De_Passe) VALUES ('$nom','$prenom','$email','$pwd')";
                 $this->model->execute_query($sql);
-                 
-                // Redirection vers la page de liste des contacts
-                header('Location: ../Vue/Accueil.php');
+
                 exit();
 
             }
         } else {
-            // Si la requête n'est pas de type POST, on redirige vers la page de formulaire
-            header('Location: ../Vue/Accueil.php');
             exit();
         }
     }
