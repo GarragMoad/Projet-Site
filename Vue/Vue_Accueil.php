@@ -55,7 +55,7 @@
                         <h1 class="presentation-big" id="presentation-big">The ultimate learning platform for the very begginers.</h1>
                         <p class="presentation-small" id="presentation-small">We believe the world is more beautiful as each person gets more skills and knows how to implement.</p>
                         <a href="#">
-                            <span class="get-started" id="get-started">Get Started</span>
+                            <span class="get-started" id="get-started"> <a href="Vue/Vue_Connexion.php">Get Started</a></span>
                         </a>
                     </div>
                     <div class="container-center-right" id="container-center-right">
