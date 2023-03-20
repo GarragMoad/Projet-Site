@@ -9,7 +9,6 @@ class Model_BDD {
             require_once('config/Config_BDD.php');  
             $this->conn = new PDO("mysql:host=localhost;dbname=td6", DB_USER, DB_PASS);
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Connexion réussie !";
         }catch(PDOException $e) {
             echo "Erreur de connexion : ";
         }
