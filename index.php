@@ -1,7 +1,7 @@
 <?php
 
 require('Controller/Controlleur_BDD.php');
-require_once('Vue/Accueil.php');
+require_once('Vue/Vue_Accueil.php');
 
 try {
   if (isset($_GET['action'])) {
@@ -13,6 +13,7 @@ try {
         throw new Exception("Argument non valide");
       }
     }
+    
 }
 catch (Exception $e) {
     echo ($e->getMessage());
