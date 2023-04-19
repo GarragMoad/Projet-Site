@@ -5,6 +5,8 @@
     --course-background : hsl(0, 0%, 100%);
     --background-button-black : hsl(0, 0%, 0%);
     --background-button-white : hsl(0, 0%, 100%);
+    --background-button-white-hover : hsl(0, 0%, 95%);
+    --background-icon-black : hsl(0, 0%, 0%);
     --buttons-shadow : hsl(243, 86%, 86%);
     --buttons-hover : hsl(243, 86%, 86%);
     --button-border : hsl(0, 0%, 0%);
@@ -22,6 +24,7 @@
     --text-white : hsl(0, 0%, 100%);
     --text-black : hsl(0, 0%, 0%);
     --text-grey : hsl(0, 0%, 40%);
+    --icon-color : hsl(27, 39%, 95%);
     --star : hsl(50, 96%, 71%);
 
     /*Fonts*/
@@ -67,125 +70,9 @@ a:link, a:visited
     width: 100%;
 }
 
-.container-header
-{
-    height: 16%;
-    border-bottom: solid 1px var(--hr-border-thiner);
-}
-
-.container-header-1
-{
-    height: 60%;
-    width: 65%;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    border-bottom: solid 1px var(--hr-border);
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container-header-1 .container-logo, .container-header-1 .container-sign-up
-{
-    display: flex;
-    align-items: center;
-}
-
-.container-header-1 .container-logo
-{
-    justify-content: flex-start;
-}
-
-.container-logo .logo
-{
-    font-family: var(--logo-font);
-    font-weight: var(--ultra-bold);
-    font-size: 38px;
-}
-
-.container-header-1 .container-sign-up
-{
-    justify-content: flex-end;
-}
-
-.container-sign-up .sign-up
-{
-    width: 130px;
-    height: 40px;
-    padding: 10px 0;
-    font-family: var(--general-font);
-    font-size: 14px;
-    font-weight: var(--bolder);
-    color: var(--text-white);
-    background-color: var(--background-button-black);
-    border: solid 1px var(--button-border);
-    box-shadow: var(--overall-background) -4px 4px 0 0, var(--button-border) -4px 4px 1px;
-    text-align: center;
-    justify-content: center;
-}
-
-.container-sign-up .sign-up:hover
-{
-    color: var(--text-black);
-    background-color: var(--buttons-hover);
-}
-
-.container-header-2
-{
-    height: 40%;
-    width: 65%;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.container-header-2 .container-menu, .container-header-2 .container-instructor, .container-header-2 .container-instructor
-{
-    display: flex;
-    align-items: center;
-}
-
-.container-menu i
-{
-    font-size: 16px;
-}
-
-.container-menu .courses
-{
-    font-family: var(--general-font);
-    font-size: var(--bolder);
-    font-size: 14px;
-    padding-left: 8px;
-    padding-right: 12px;
-    border-right: solid 1px var(--hr-border);
-}
-
-.container-instructor .instructor
-{
-    font-family: var(--general-font);
-    font-size: var(--bolder);
-    font-size: 14px;
-    color: var(--text-grey);
-    padding-left: 12px;
-    padding-right: 8px;
-}
-
-.container-contact-us .contact-us
-{
-    font-family: var(--general-font);
-    font-size: var(--bolder);
-    font-size: 14px;
-    color: var(--text-grey);
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
 .container-center-1
 {
-    width: 65%;
+    width: 75%;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -290,7 +177,7 @@ a:link, a:visited
 
 .container-center-3
 {   
-    width: 65%;
+    width: 75%;
     margin: 0 auto;
     margin-top: 40px;
     display: block;
@@ -325,8 +212,10 @@ a:link, a:visited
     justify-content: space-between;
 }
 
-.courses-display .js-web-course, .courses-display .english-course,  .courses-display .iphone-shooting-course,  .courses-display .ui-ux-course
+.courses-display a
 {
+    width: 100%;
+    height: 100%;
     margin-left: 8px;
     margin-right: 8px;
     padding: 8px;
@@ -336,6 +225,8 @@ a:link, a:visited
 
 .course-image
 {
+    width: 100%;
+    height: 100%;
     margin-bottom: 12px;
 }
 
@@ -422,7 +313,7 @@ a:link, a:visited
 
 .container-center-4
 {
-    width: 65%;
+    width: 75%;
     margin: 0 auto;
     margin-top: 60px;
     display: block;
@@ -445,7 +336,7 @@ a:link, a:visited
 {
     margin: 0 auto;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -498,17 +389,4 @@ a:link, a:visited
     font-weight: var(--ultra-bold);
     font-size: 16px;
     background-color: var(--health-category);
-}
-
-.container-footer
-{
-    height: 25vh;
-    width: 100%;
-    display: flex;
-    background-color: var(--footer);
-}
-
-.container-footer .container-footer-1, .container-footer .container-footer-2, .container-footer .container-footer-3
-{
-    width: 33.33%;
 }

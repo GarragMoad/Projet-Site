@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between; /* Ajouter cette ligne pour aligner les éléments horizontalement */
+    align-items: flex-start; /* Ajouter cette ligne pour aligner les éléments verticalement */
+    margin-top: 50px;
+  }
+  
+form {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+  }
+
+form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  padding: 5px 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+}
+
+
+
+.add {
+  padding-bottom: 86px;
+}
+
+.delete {
+  padding-bottom: 267px;
+}
+
+.cours {
+  margin-top: 20px;
+  display: flex;
+  /*margin-left: 33%;*/
+  justify-content: space-between; /* Ajouter cette ligne pour aligner les éléments horizontalement */
+  align-items: flex-start; /* Ajouter cette ligne pour aligner les éléments verticalement */
+  width: 100%;
+  /*padding-left: 27%;*/
+}
+
+.cours form {
+  width: 100%;
+}

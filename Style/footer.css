@@ -1,0 +1,167 @@
+:root
+{
+    /*Colors*/
+    --overall-background : hsl(27, 39%, 95%);
+    --course-background : hsl(0, 0%, 100%);
+    --background-button-black : hsl(0, 0%, 0%);
+    --background-button-white : hsl(0, 0%, 100%);
+    --background-button-white-hover : hsl(0, 0%, 95%);
+    --background-icon-black : hsl(0, 0%, 0%);
+    --buttons-shadow : hsl(243, 86%, 86%);
+    --buttons-hover : hsl(243, 86%, 86%);
+    --button-border : hsl(0, 0%, 0%);
+    --course-border : hsl(0, 0%, 0%);
+    --category-border : hsl(0, 0%, 0%);
+    --hr-border : hsl(0, 0%, 87%);
+    --hr-border-thiner : hsl(0, 0%, 90%);
+    --dev-category : hsl(38, 100%, 90%);
+    --languages-category : hsl(85, 40%, 91%);
+    --design-category : hsl(243, 100%, 96%);
+    --health-category : hsl(354, 72%, 94%);
+    --testimonials : hsl(50, 96%, 71%);
+    --footer : hsl(27, 22%, 92%);
+    --background-beta : hsl(0, 0%, 100%);
+    --text-white : hsl(0, 0%, 100%);
+    --text-black : hsl(0, 0%, 0%);
+    --text-grey : hsl(0, 0%, 40%);
+    --icon-color : hsl(27, 39%, 95%);
+    --star : hsl(50, 96%, 71%);
+
+    /*Fonts*/
+    --logo-font : "DM Sans";
+    --general-font : "DM Sans";
+
+    /*Font weight*/
+    --bold : 400;
+    --bolder : 500;
+    --ultra-bold : 800;
+}
+
+a:link, a:visited
+{
+    cursor: pointer;
+    color: var(--text);
+    text-decoration-line: none;
+}
+
+.container-footer
+{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    background-color: var(--footer);
+}
+
+.container-footer .container-footer-1, .container-footer .container-footer-2, .container-footer .container-footer-3
+{
+    width: 33.33%;
+    height: 100%;
+}
+
+.container-footer .container-footer-1
+{
+    width: 15%;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.container-footer-1 .footer-logo, .container-footer-1 .footer-phone, .container-footer-1 .footer-mail, .container-footer-1 .footer-socials
+{
+    margin-top: 10px;
+}
+
+.container-footer-1 .footer-logo
+{
+    font-family: var(--logo-font);
+    font-weight: var(--ultra-bold);
+    font-size: 38px;
+    margin-top: 30px;
+}
+
+.container-footer-1 .footer-phone, .container-footer-1 .footer-mail
+{
+    font-family: var(--general-font);
+    font-size: 16px;
+}
+
+.container-footer-1 .footer-socials i
+{
+    border-radius: 50%;
+    padding: 5px;
+    color: var(--icon-color);
+    background-color: var(--background-icon-black);
+}
+
+.container-footer .container-footer-2
+{
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-footer-2 .container-footer-2-1 p
+{
+    font-family: var(--general-font);
+    font-size: 16px;
+    padding: 5px;
+    padding-right: 30px;
+}
+
+.container-footer-2 .container-footer-2-2 p
+{
+    font-family: var(--general-font);
+    font-size: 16px;
+    padding: 5px;
+    padding-right: 30px;
+}
+
+.container-footer-2 .container-footer-2-3 p
+{
+    font-family: var(--general-font);
+    font-size: 16px;
+    padding: 5px;
+    padding-right: 30px;
+}
+
+.container-footer .container-footer-3
+{
+    width: 25%;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+}
+
+.container-footer-3 .container-footer-3-title
+{
+    font-family: var(--general-font);
+    font-weight: var(--ultra-bold);
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+.container-footer-3 .email-input
+{
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    font-family: var(--general-font);
+    font-size: 14px;
+    border: solid 1px var(--background-button-black);
+}
+
+.container-footer-3 .button-input
+{
+    cursor: pointer;
+    height: 40px;
+    width: 35%;
+    margin-top: 10px;
+    font-family: var(--general-font);
+    font-size: 14px;
+    color: var(--text-white);
+    background-color: var(--background-button-black);
+}

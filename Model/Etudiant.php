@@ -1,12 +1,15 @@
 <?php 
-class Etudiant {
+
+class Etudiant 
+{
+
     private $id;
     private $nom;
     private $prenom;
     private $email;
     private $mot_de_passe;
   
-    public function __construct( $nom, $prenom, $email, $mot_de_passe) {
+    public function __construct($nom, $prenom, $email, $mot_de_passe) {
       $this->nom = $nom;
       $this->prenom = $prenom;
       $this->email = $email;
@@ -48,6 +51,8 @@ class Etudiant {
     public function setMotDePasse($mot_de_passe) {
       $this->mot_de_passe = $mot_de_passe;
     }
+
   }
+
 ?>
 

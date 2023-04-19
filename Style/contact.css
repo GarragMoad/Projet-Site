@@ -1,0 +1,199 @@
+:root
+{
+    /*Colors*/
+    --overall-background : hsl(27, 39%, 95%);
+    --course-background : hsl(0, 0%, 100%);
+    --background-button-black : hsl(0, 0%, 0%);
+    --background-button-white : hsl(0, 0%, 100%);
+    --background-button-white-hover : hsl(0, 0%, 95%);
+    --background-icon-black : hsl(0, 0%, 0%);
+    --background-contact : hsl(0, 0%, 100%);
+    --buttons-shadow : hsl(243, 86%, 86%);
+    --buttons-hover : hsl(243, 86%, 86%);
+    --button-border : hsl(0, 0%, 0%);
+    --course-border : hsl(0, 0%, 0%);
+    --category-border : hsl(0, 0%, 0%);
+    --contact-border : hsl(0, 0%, 0%);
+    --hr-border : hsl(0, 0%, 87%);
+    --hr-border-thiner : hsl(0, 0%, 90%);
+    --dev-category : hsl(38, 100%, 90%);
+    --languages-category : hsl(85, 40%, 91%);
+    --design-category : hsl(243, 100%, 96%);
+    --health-category : hsl(354, 72%, 94%);
+    --testimonials : hsl(50, 96%, 71%);
+    --footer : hsl(27, 22%, 92%);
+    --background-beta : hsl(0, 0%, 100%);
+    --text-white : hsl(0, 0%, 100%);
+    --text-black : hsl(0, 0%, 0%);
+    --text-grey : hsl(0, 0%, 40%);
+    --icon-color : hsl(27, 39%, 95%);
+    --star : hsl(50, 96%, 71%);
+
+    /*Fonts*/
+    --logo-font : "DM Sans";
+    --general-font : "DM Sans";
+
+    /*Font weight*/
+    --bold : 400;
+    --bolder : 500;
+    --ultra-bold : 800;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: var(--overall-background);
+}
+
+a:link, a:visited
+{
+    cursor: pointer;
+    color: var(--text);
+    text-decoration-line: none;
+}
+
+.container
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.container .container-center
+{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--background-contact);
+    border: solid 2px var(--contact-border);
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-center .container-center-child
+{
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 40px;
+}
+
+.container-contact-us .contact-us-title
+{
+    font-family: var(--general-font);
+    font-size: 36px;
+    font-weight: var(--ultra-bold);
+    color: var(--text-black);
+}
+
+.container-contact-form form, .container-contact-form input
+{
+    width: 100%;
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-contact-form form
+{
+    padding: 20px;
+}
+
+.contact-form .container-name-mail
+{
+    display: flex;
+}
+
+.container-name-mail .container-name
+{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.container-name-mail .container-mail
+{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.container-name .name-label
+{
+    font-family: var(--general-font);
+    font-size: 14px;
+}
+
+.container-name .name-input
+{
+    font-family: var(--general-font);
+    font-size: 14px;
+    border: solid 2px var(--button-border);
+    height: 40px;
+}
+
+.container-mail .email-label
+{
+    font-family: var(--general-font);
+    font-size: 14px;
+}
+
+.container-mail .email-input
+{
+    font-family: var(--general-font);
+    font-size: 14px;
+    border: solid 2px var(--button-border);
+    height: 40px;
+}
+
+.container-subject .subject-label
+{
+    font-family: var(--general-font);
+    font-size: 14px;
+}
+
+.container-subject .subject-input
+{
+    font-family: var(--general-font);
+    font-size: 14px;
+    border: solid 2px var(--button-border);
+    height: 40px;
+}
+
+.container-message .message-label
+{
+    font-family: var(--general-font);
+    font-size: 14px;
+}
+
+.container-message .message-input
+{
+    height: 200px;
+    width: 100%;
+    margin-top: 10px;
+    font-family: var(--general-font);
+    font-size: 14px;
+    border: solid 2px var(--button-border);
+}
+
+.container-send .send-input
+{
+    height: 40px;
+    width: 100%;
+    margin-top: 30px;
+    font-family: var(--general-font);
+    font-size: 14px;
+    background-color: var(--background-button-black);
+    color: var(--text-white)
+}
